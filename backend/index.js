@@ -22,6 +22,14 @@ const PORT = process.env.PORT || 4000;
 app.use("/api",(req,res,next) =>{
   res.json({message: "Hello from backend!"})
 })
+app.get("/",(req,res,next) =>{
+
+  res.send({
+    activestatus:true,
+    error:false,
+  })
+
+})
 
 
 

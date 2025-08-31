@@ -4,7 +4,7 @@ function Backend() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api')
+    fetch('https://frontend-backend-hosts.vercel.app/api')
       .then((res) => res.json())
       .then((data) => setData(data.message))
       .catch((err) => {
